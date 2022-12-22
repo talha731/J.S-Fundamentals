@@ -142,3 +142,11 @@ let avarageProfitOrLost = ((finances[0][1] - finances[1][1] + finances[2][1] - f
 // * The greatest increase in profits (date and amount) over the entire period.
 
 
+ let greatestIncreaseInProfit = finances[0];
+
+  for (var i = 0; i < finances.length; i++) {
+       if (finances[i] >= greatestIncreaseInProfit) {
+        greatestIncreaseInProfit = finances[i];
+       }
+  }
+  console.log( 'Greatest Increase In Profit: ' + greatestIncreaseInProfit);
