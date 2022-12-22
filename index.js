@@ -89,7 +89,8 @@ var finances = [
     
  // The total number of months included in the dataset.
  console.log('Text');
- console.log('------------------------');
+ console.log('Financial Analysis');
+ console.log('-------------------------------------------------------------------------------');
  var totalNumberOfMonths= 'Total Months: ' + 85;
  console.log(totalNumberOfMonths);
 
