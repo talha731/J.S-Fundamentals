@@ -89,26 +89,56 @@ var finances = [
     
  // The total number of months included in the dataset.
 
- var totalNumberOfMonths= ' Total Months: ' + 86;
+ var totalNumberOfMonths= ' Total Months: ' + 85;
  console.log(totalNumberOfMonths);
 
  // * The net total amount of Profit/Losses over the entire period.
+
+ var tatalProfitOrLost = (finances[0][1] + finances[1][1] + finances[2][1] + finances[3][1] + finances[4][1] + finances[5][1] + finances[6][1] + finances[7][1] +
+    finances[8][1] + finances[9][1]  + finances[10][1] + finances[11][1] + finances[12][1] + finances[13][1] + finances[14][1] + finances[15][1] + finances[16][1] + finances[17][1] +
+   finances[18][1] + finances[19][1] + finances[20][1] + finances[21][1] + finances[22][1] + finances[23][1] + finances[24][1] + finances[25][1] + finances[26][1] + finances[27][1] +
+   finances[28][1] + finances[29][1] + finances[30][1] + finances[31][1] + finances[32][1] + finances[33][1] + finances[34][1] + finances[35][1] + finances[36][1] + finances[37][1] + 
+   finances[38][1] + finances[39][1] + finances[40][1] + finances[41][1] + finances[42][1] + finances[43][1] + finances[44][1] + finances[45][1] + finances[46][1] + finances[47][1] + 
+   finances[48][1] + finances[49][1] + finances[50][1] + finances[51][1] + finances[52][1] + finances[53][1] + finances[54][1] + finances[55][1] + finances[56][1] + finances[57][1] + finances[58][1] +
+   finances[59][1] + finances[60][1] + finances[61][1] + finances[62][1] + finances[63][1] + finances[64][1] + finances[65][1] + finances[66][1] + finances[67][1] + finances[68][1] + finances[69][1] +
+   finances[70][1] + finances[71][1] + finances[72][1] + finances[73][1] + finances[74][1] + finances[75][1] + finances[76][1] + finances[77][1] + finances[78][1] + finances[79][1] + finances[80][1] +
+   finances[81][1] + finances[82][1] + finances[83][1] + finances[84][1] + finances[85][1]);
+
  finances[0][1]
- console.log( finances[0][1] + finances[1][1] + finances[2][1] + finances[3][1] + finances[4][1] + finances[5][1] + finances[6][1] + finances[7][1] +
-     finances[8][1] + finances[9][1] + finances[10][1] + finances[11][1] + finances[12][1] + finances[13][1] + finances[14][1] + finances[15][1] + finances[16][1] + finances[17][1] +
-    finances[18][1] + finances[19][1] + finances[20][1] + finances[21][1] + finances[22][1] + finances[23][1] + finances[24][1] + finances[25][1] + finances[26][1] + finances[27][1] +
-    finances[28][1] + finances[29][1] + finances[30][1] + finances[31][1] + finances[32][1] + finances[33][1] + finances[34][1] + finances[35][1] + finances[36][1] + finances[37][1] + 
-    finances[38][1] + finances[39][1] + finances[40][1] + finances[41][1] + finances[42][1] + finances[43][1] + finances[44][1] + finances[45][1] + finances[46][1] + finances[47][1] + 
-    finances[48][1] + finances[49][1] + finances[50][1] + finances[51][1] + finances[52][1] + finances[53][1] + finances[54][1] + finances[55][1] + finances[56][1] + finances[57][1] + finances[58][1] +
-    finances[59][1] + finances[60][1] + finances[61][1] + finances[62][1] + finances[63][1] + finances[64][1] + finances[65][1] + finances[66][1] + finances[67][1] + finances[68][1] + finances[69][1] +
-    finances[70][1] + finances[71][1] + finances[72][1] + finances[73][1] + finances[74][1] + finances[75][1] + finances[76][1] + finances[77][1] + finances[78][1] + finances[79][1] + finances[80][1] +
-    finances[81][1] + finances[82][1] + finances[83][1] + finances[84][1] + finances[85][1]);
+
+ console.log( 'Net total amount of Profit/ Losses over the entire period: ' + tatalProfitOrLost );
 
    
 // * The average of the **changes** in Profit/Losses over the entire period.
 //   * You will need to track what the total change in profits are from month to month and then find the average.
+
+finances[0][1]
+let ChangesInProfitLosses = (finances[0][1] - finances[1][1] + finances[2][1] - finances[3][1] + finances[4][1] - finances[5][1] + finances[6][1] - finances[7][1] +
+    finances[8][1] - finances[9][1]  + finances[10][1] - finances[11][1] + finances[12][1] - finances[13][1] + finances[14][1] - finances[15][1] + finances[16][1] - finances[17][1] +
+    finances[18][1] - finances[19][1] + finances[20][1] - finances[21][1] + finances[22][1] - finances[23][1] + finances[24][1] - finances[25][1] + finances[26][1] - finances[27][1] +
+    finances[28][1] - finances[29][1] + finances[30][1] - finances[31][1] + finances[32][1] - finances[33][1] + finances[34][1] - finances[35][1] + finances[36][1] - finances[37][1] + 
+    finances[38][1] - finances[39][1] + finances[40][1] - finances[41][1] + finances[42][1] - finances[43][1] + finances[44][1] - finances[45][1] + finances[46][1] - finances[47][1] + 
+    finances[48][1] - finances[49][1] + finances[50][1] - finances[51][1] + finances[52][1] - finances[53][1] + finances[54][1] - finances[55][1] + finances[56][1] - finances[57][1] + finances[58][1] -
+    finances[59][1] + finances[60][1] - finances[61][1] + finances[62][1] - finances[63][1] + finances[64][1] - finances[65][1] + finances[66][1] - finances[67][1] + finances[68][1] - finances[69][1] +
+    finances[70][1] - finances[71][1] + finances[72][1] - finances[73][1] + finances[74][1] - finances[75][1] + finances[76][1] - finances[77][1] + finances[78][1] - finances[79][1] + finances[80][1] -
+    finances[81][1] + finances[82][1] - finances[83][1] + finances[84][1] - finances[85][1]);
+
+ console.log( 'Changes in Profit/ Losses over the entire period: ' + ChangesInProfitLosses
+     );
 //   * (`Total/Number of months`)
+let avarageProfitOrLost = ((finances[0][1] - finances[1][1] + finances[2][1] - finances[3][1] + finances[4][1] - finances[5][1] + finances[6][1] - finances[7][1] +
+    finances[8][1] - finances[9][1]  + finances[10][1] - finances[11][1] + finances[12][1] - finances[13][1] + finances[14][1] - finances[15][1] + finances[16][1] - finances[17][1] +
+    finances[18][1] - finances[19][1] + finances[20][1] - finances[21][1] + finances[22][1] - finances[23][1] + finances[24][1] - finances[25][1] + finances[26][1] - finances[27][1] +
+    finances[28][1] - finances[29][1] + finances[30][1] - finances[31][1] + finances[32][1] - finances[33][1] + finances[34][1] - finances[35][1] + finances[36][1] - finances[37][1] + 
+    finances[38][1] - finances[39][1] + finances[40][1] - finances[41][1] + finances[42][1] - finances[43][1] + finances[44][1] - finances[45][1] + finances[46][1] - finances[47][1] + 
+    finances[48][1] - finances[49][1] + finances[50][1] - finances[51][1] + finances[52][1] - finances[53][1] + finances[54][1] - finances[55][1] + finances[56][1] - finances[57][1] + finances[58][1] -
+    finances[59][1] + finances[60][1] - finances[61][1] + finances[62][1] - finances[63][1] + finances[64][1] - finances[65][1] + finances[66][1] - finances[67][1] + finances[68][1] - finances[69][1] +
+    finances[70][1] - finances[71][1] + finances[72][1] - finances[73][1] + finances[74][1] - finances[75][1] + finances[76][1] - finances[77][1] + finances[78][1] - finances[79][1] + finances[80][1] -
+    finances[81][1] + finances[82][1] - finances[83][1] + finances[84][1] - finances[85][1])/85
+    );
+     finances[0][1]
+     console.log( 'Net total amount of Profit/ Losses over the entire period: ' + avarageProfitOrLost);
 
 // * The greatest increase in profits (date and amount) over the entire period.
 
-// * The greatest decrease in losses (date and amount) over the entire period.
+
